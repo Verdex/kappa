@@ -13,7 +13,7 @@ namespace Kappa.Actors
         {
             get 
             {
-                yield break;
+                yield return s => new KeyPressUpdater( s.Keyboard );
             }
         }
 
