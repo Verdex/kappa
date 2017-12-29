@@ -11,8 +11,10 @@ namespace Kappa.Main
     {
         public static void Main()
         {
+            // TODO setup state (de)serialization
             var state = new State();
             state.Keyboard = new Keyboard();
+
             var director = new Director(state);  
 
             director.RunActors();
