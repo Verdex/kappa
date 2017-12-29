@@ -23,7 +23,7 @@ namespace Kappa.Actors
         public Director(State state)
         {
             _state = state;
-            _actors = BuildActors.ToList();
+            _actors = BuildActors.Select( builder => builder(state) ).ToList();
         }
 
         public void RunActors()
