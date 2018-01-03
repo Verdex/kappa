@@ -1,5 +1,5 @@
 
-uisng Kappa.Util;
+using Kappa.Util;
 
 namespace Kappa.Data
 {

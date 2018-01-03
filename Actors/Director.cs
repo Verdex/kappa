@@ -14,6 +14,7 @@ namespace Kappa.Actors
             get 
             {
                 yield return s => new KeyPressUpdater( s.Keyboard );
+                yield return s => new RenderWorld( s.GameMode, s.RenderObjects );
             }
         }
 
