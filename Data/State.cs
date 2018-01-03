@@ -1,4 +1,6 @@
 
+using Kappa.Util;
+
 namespace Kappa.Data
 {
     public class State
