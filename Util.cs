@@ -21,7 +21,7 @@ namespace Kappa.Util
 
     public class Some<T> : IOption<T>
     {
-        public T Item { get; set; }
+        public T Item { get; }
         public bool HasItem { get; } = true;
         public Some(T item)
         {
@@ -42,5 +42,14 @@ namespace Kappa.Util
     {
         public int X { get; set; }
         public int Y { get; set; }
+    }
+
+    public class Ref<T>
+    {
+        public T Item { get; } 
+        public Ref( T item )
+        {
+            Item = item;
+        }
     }
 }
