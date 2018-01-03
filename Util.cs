@@ -46,10 +46,10 @@ namespace Kappa.Util
 
     public class Ref<T>
     {
-        public T Item { get; } 
-        public Ref( T item )
+        public T Value { get; } 
+        public Ref( T value )
         {
-            Item = item;
+            Value = value;
         }
     }
 }
