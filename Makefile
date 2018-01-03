@@ -5,7 +5,7 @@ data = Data/*.cs
 actor = Actors/*.cs
 
 all : 
-	$(cc) Program.cs $(data) $(actor)
+	$(cc) Program.cs Util.cs $(data) $(actor)
 
 clean :
 	rm -rf *.exe
