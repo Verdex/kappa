@@ -10,5 +10,6 @@ namespace Kappa.Data
         public Keyboard Keyboard { get; set; }
         public Ref<GameMode> GameMode { get; set; } // TODO add quit game mode
         public List<IRenderable> RenderObjects { get; set; }
+        public Ref<bool> Quit { get; set; } 
     }
 }
