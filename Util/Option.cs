@@ -1,5 +1,3 @@
-
-
 namespace Kappa.Util
 {
     public static class Option
@@ -35,21 +33,6 @@ namespace Kappa.Util
         public bool HasItem { get; } = false;
         public None()
         {
-        }
-    }
-
-    public class Point
-    {
-        public int X { get; set; }
-        public int Y { get; set; }
-    }
-
-    public class Ref<T>
-    {
-        public T Value { get; } 
-        public Ref( T value )
-        {
-            Value = value;
         }
     }
 }
