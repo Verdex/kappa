@@ -7,12 +7,14 @@ using Kappa.Data;
 
 namespace Kappa.Actors
 {
+    // TODO save game util?
     public class Director
     {
         private IEnumerable<Func<State, IActor>> BuildActors
         {
             get 
             {
+                // TODO render save game menu
                 yield return s => new KeyPressUpdater( s.Keyboard );
                 yield return s => new RenderWorld( s.GameMode, s.RenderObjects );
             }
@@ -36,6 +38,7 @@ namespace Kappa.Actors
                     actor.Act();
                 }
             }
+            // TODO save game ? 
         }
     }
 }
