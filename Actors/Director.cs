@@ -14,9 +14,9 @@ namespace Kappa.Actors
         {
             get 
             {
-                // TODO render save game menu
                 yield return s => new KeyPressUpdater( s.Keyboard );
                 yield return s => new RenderWorld( s.GameMode, s.RenderObjects );
+                // TODO render save game menu
             }
         }
 
